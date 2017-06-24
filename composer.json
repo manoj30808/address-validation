@@ -1,0 +1,34 @@
+{
+    "name": "msppack/DDSGenerate",
+    "keywords": ["laravel5.4","DDSGenerate","social","facebook","google"],
+    "description": "Package for create easly form with single sintex",
+    "authors": [
+        {
+            "name": "Manoj Sonagra",
+            "email": "manoj30808@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sonlabs\\AddressValid\\": "src"
+        }
+    },
+     "scripts": {
+        "post-create-project-cmd": [
+            "php artisan migrate",
+            "php artisan vendor:publish"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan optimize"
+        ]
+    }
+}
