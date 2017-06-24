@@ -1,7 +1,7 @@
 {
-    "name": "msppack/DDSGenerate",
-    "keywords": ["laravel5.4","DDSGenerate","social","facebook","google"],
-    "description": "Package for create easly form with single sintex",
+    "name": "sonlabs/address-validation",
+    "keywords": ["address-validation","custom-validation","google-map-address","address","validation"],
+    "description": "This package used for physical address verification  with google",
     "authors": [
         {
             "name": "Manoj Sonagra",
