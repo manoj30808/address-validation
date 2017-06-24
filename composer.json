@@ -1,5 +1,5 @@
 {
-    "name": "sonlabs/address-validation",
+    "name": "sonlabs/address-varification",
     "keywords": ["address-validation","custom-validation","google-map-address","address","validation"],
     "description": "This package used for physical address verification  with google",
     "authors": [
