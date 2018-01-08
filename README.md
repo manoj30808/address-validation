@@ -1,5 +1,7 @@
 # Address Validation in Laravel
-    ``  This package used for physical address verification  with google.
+
+```php
+This package used for physical address verification  with google.
 
     1) composer require sonlabs/address-varification
     2) Add below line in your provider at (config\app.php) 
