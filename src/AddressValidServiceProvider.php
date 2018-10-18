@@ -23,7 +23,8 @@ class AddressValidServiceProvider extends ServiceProvider {
                 
                 $client = new Client(['verify' => false]);
                 $result = $client->request('GET', 'https://maps.googleapis.com/maps/api/geocode/json', [
-                    'query' => ['address' => $remove_spaces]
+                    'query' => ['address' => $remove_spaces],
+		    'key' => env('GOOGLE_MAPS_API_KEY')
                 ]);
                 $response = json_decode($result->getBody());    
                 if ($response->status=='OK') {
